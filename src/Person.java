@@ -1,19 +1,33 @@
 public class Person {
 
     // Attribute
-    private String name = "Peter";
-    private int age = 15;
+    private String name;
+    private int age;
 
     // Referenzen
 
     // Konstruktor
-    public Person(){
-        halloSagen();
+    public Person(String name, int age){
+        this.name = name;
+        this.age = age;
     }
 
     // Methoden
-    public void halloSagen(){
-        System.out.println("Well, hello there!");
+
+
+    public String getName() {
+        return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
 }
